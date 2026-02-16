@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Should a Robot Configure Its Laser Scanner for Inspection? | Project Page</title>
+    <meta
+      name="description"
+      content="SenseHD project page with teaser video, setup figure, model figure, and technical highlights."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-left"></div>
+    <div class="bg-glow bg-glow-right"></div>
+
+    <header class="hero container reveal">
+      <h1 class="hero-title">How Should a Robot Configure Its Laser Scanner for Inspection?</h1>
+      <div class="meta">
+        <span>Authors: Zhiling Chen et al.</span>
+        <span>Affiliation: University of Connecticut</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="video" class="panel panel-video reveal">
+        <div class="video-wrap">
+          <video controls autoplay muted loop playsinline>
+            <source src="assets/teaser.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section id="figures" class="figure-stack reveal">
+        <article class="panel card figure-card">
+          <h2>Our Setup</h2>
+          <figure>
+            <img class="setup-image" src="assets/setup-figure.png" alt="SenseHD setup figure" />
+          </figure>
+        </article>
+
+        <article class="panel card figure-card">
+          <h2>Our Model</h2>
+          <figure>
+            <img src="assets/model-figure.png" alt="SenseHD model figure" />
+          </figure>
+        </article>
+      </section>
+
+      <section class="panel reveal">
+        <h2>Citation</h2>
+        <pre><code>@inproceedings{chen2026sensehd,
+  title={How Should a Robot Configure Its Laser Scanner for Inspection?},
+  author={Chen, Zhiling and others},
+  booktitle={arxiv},
+  year={2026}
+}</code></pre>
+      </section>
+    </main>
+
+    <footer class="container footer reveal">
+      <p>© 2026 SenseHD Project Page</p>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add('in');
+          });
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
